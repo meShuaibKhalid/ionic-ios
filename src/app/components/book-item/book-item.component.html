@@ -1,0 +1,24 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{book?.title}}</ion-card-title>
+    <ion-card-subtitle>{{book?.author}}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <p class="mt-2"><strong>Publish Date:</strong> {{book?.publish_date}}</p>
+    <p class="mt-2"><strong>Status:</strong> {{book?.status}}</p>
+    <p class="mt-2"><strong>Borrowed By:</strong> {{book?.borrowedBy}}</p>
+    <p class="mt-2"><strong>Category:</strong> {{book?.category}}</p>
+    <p class="mt-2"><strong>Owned By:</strong> {{book?.contact}}</p>
+    <p class="mt-2"><strong>Phone:</strong> {{book?.phone}}</p>
+    <p class="mt-2"><strong>Email:</strong> {{book?.email}}</p>
+    <p class="mt-2">{{book.abstract}}</p>
+    <div class="d-flex my-2">
+      <input type="email" #f class="borrow-input" placeholder="Enter your email address" required
+        (click)="$event.stopPropagation();">
+      <button class="btn btn-primary" (click)="change_book(f, book.ID); $event.stopPropagation();">{{book.status ==
+        'available'?'Borrow':'Return'}}</button>
+    </div>
+    <img [src]="book.image">
+
+  </ion-card-content>
+</ion-card>

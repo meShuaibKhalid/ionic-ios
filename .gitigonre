@@ -1,0 +1,21 @@
+# Ionic
+node_modules/
+platforms/
+plugins/
+www/
+
+# macOS
+.DS_Store
+
+# Android
+*.apk
+*.ap_
+*.aab
+
+# iOS
+*.ipa
+*.xcworkspace
+*.xcuserdatad
+*.xccheckout
+*.xcscmblueprint
+*.xcodeproj/

@@ -1,0 +1,31 @@
+<div class="container w-100">
+  <div
+    class="d-flex flex-column justify-content-center align-items-center main"
+  >
+    <h1 class="text-center">Welcome to Book Exchange Application</h1>
+    <p class="text-center">
+      A platform for a book exchange service where the users could either borrow
+      a book that is offered to the platform by another user or offer their
+      books on the platform for other users to borrow
+    </p>
+    <div class="buttons">
+      <ion-button
+      class="mx-2"
+      (click)="navigateTo('/tabs/tab2')"
+
+      routerLinkActive="router-link-active"
+    >
+      Explore books
+    </ion-button>
+    
+    <ion-button
+      class="mx-2"
+      (click)="navigateTo('/tabs/tab3')"
+      routerLinkActive="router-link-active"
+    >
+      Add books
+    </ion-button>
+    
+    </div>
+  </div>
+</div>
