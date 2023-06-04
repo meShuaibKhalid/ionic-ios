@@ -11,7 +11,7 @@ import { BooksService } from 'src/app/books.service';
 export class BookItemComponent implements OnInit {
   @Input() book;
   viewBookDetails: Book;
-  @ViewChild('displayBook') displayBook!: ElementRef;
+  @ViewChild('displayBook', {static: true}) displayBook!: ElementRef;
   constructor(private service: BooksService, private router: Router) {
   }
 
